@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CookiePage } from '../cookie/cookie';
 import { HelpPage } from '../help/help';
+import { TestePage } from '../teste/teste';
 
 /**
  * Generated class for the TabsPage page.
@@ -21,7 +22,10 @@ export class TabsPage {
   cookieTabTitle = "Take your fortune";
 
   helpTab = HelpPage;
-  helpTabTitle = "Help";
+  helpTabTitle = "About";
+
+  testeTab = TestePage;
+  testeTabTitle = "Teste Cards";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

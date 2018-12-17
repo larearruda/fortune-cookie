@@ -5,25 +5,43 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Help</ion-title>
+  <ion-navbar color="danger">
+    <ion-title>About</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
-    <ul class="list">
-        <li class="item">
-          item 1
-        </li>
-        <li class="item">
-          item 1
-        </li>
-        <li class="item">
-          item 1
-        </li>
-    </ul>
+<ion-content padding class="cards-bg">
+    
+    <ion-card>
+        <ion-card-header>
+          About the App
+        </ion-card-header>
+      
+        <ion-list>
+          <button ion-item>
+            <ion-icon name="ionic" item-start></ion-icon>
+            Ionic 3 Framework
+          </button>
+
+          <button ion-item>
+              <ion-icon name="hammer" item-start></ion-icon>
+              Advice API <button ion-button color="primary" round (click)="openWebpage('github')">Website</button>
+            </button>
+      
+          <button ion-item>
+            <ion-icon name="code-working" item-start></ion-icon>
+            Github Page <button ion-button color="primary" round (click)="openWebpage()">Website</button>
+          </button>
+      
+          <button ion-item>
+            <ion-icon name="ios-glasses-outline" item-start></ion-icon>
+            By: Larissa Arruda
+          </button>
+      
+          
+      
+        </ion-list>
+      </ion-card>
 
 </ion-content>

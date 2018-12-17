@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { CookiePage } from '../pages/cookie/cookie';
 import { HelpPage } from '../pages/help/help';
 import { AdviceProvider } from '../providers/advice/advice';
+import { TestePage } from '../pages/teste/teste';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AdviceProvider } from '../providers/advice/advice';
     HomePage,
     TabsPage,
     CookiePage,
-    HelpPage
+    HelpPage,
+    TestePage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { AdviceProvider } from '../providers/advice/advice';
     HomePage,
     TabsPage,
     CookiePage,
-    HelpPage
+    HelpPage,
+    TestePage
   ],
   providers: [
     StatusBar,

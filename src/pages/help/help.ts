@@ -22,4 +22,13 @@ export class HelpPage {
     console.log('ionViewDidLoad HelpPage');
   }
 
+  openWebpage(webpage?: any){
+
+    if(webpage == 'github'){
+      window.open("https://github.com/larearruda/fortune-cookie",'_system', 'location=yes');
+    }else{
+      window.open("https://api.adviceslip.com/",'_system', 'location=yes');
+    }
+  }
+
 }
