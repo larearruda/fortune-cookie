@@ -1,6 +1,10 @@
 # Fortune Cookie
 
-Fortune Cookie is a Ionic 3 project created for study purposes.
+*Fortune Cookie* is a Ionic 3 project created for study purposes.
+
+The *Fortune Cookie* gets a random fortune offered by the [Advice API](https://api.adviceslip.com) and returns the message to the user.
+
+Created by  [@larearruda](https://github.com/larearruda/fortune-cookie)
 
 ## Library Reference
 * Ionic Framework @ 3.9.2
@@ -27,7 +31,7 @@ Build project in debug mode
 ```sh
 ionic cordova build android --debug
 ```
-
+8
 Build project in debug mode and run in a connect Android device
 ```sh
 ionic cordova run android --debug
