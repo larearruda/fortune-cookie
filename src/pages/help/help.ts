@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+
 
 /**
  * Generated class for the HelpPage page.
@@ -15,7 +16,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HelpPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams,
+              public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -29,6 +32,15 @@ export class HelpPage {
     }else{
       window.open("https://api.adviceslip.com/",'_system', 'location=yes');
     }
+  }
+
+  showAlert() {
+    const alert = this.alertCtrl.create({
+      title: 'New Friend!',
+      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
 }
