@@ -22,7 +22,7 @@
   <div class="s">
       <!-- <button ion-button round (click)="getFortune()">Go</button> -->
   </div>
-  <div *ngIf="advice">
-    <p> {{ advice.slip.advice }} </p>
+  <div *ngIf="advice" class="advice-text">
+    <h3> {{ advice.slip.advice }} </h3>
   </div>
 </ion-content>

@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CookiePage } from '../cookie/cookie';
-import { HelpPage } from '../help/help';
 
 /**
- * Generated class for the TabsPage page.
+ * Generated class for the HelpPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,22 +10,16 @@ import { HelpPage } from '../help/help';
 
 @IonicPage()
 @Component({
-  selector: 'page-tabs',
-  templateUrl: 'tabs.html',
+  selector: 'page-help',
+  templateUrl: 'help.html',
 })
-export class TabsPage {
-
-  cookieTab = CookiePage;
-  cookieTabTitle = "Take your fortune";
-
-  helpTab = HelpPage;
-  helpTabTitle = "Help";
+export class HelpPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
+    console.log('ionViewDidLoad HelpPage');
   }
 
 }

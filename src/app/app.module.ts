@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CookiePage } from '../pages/cookie/cookie';
+import { HelpPage } from '../pages/help/help';
 import { AdviceProvider } from '../providers/advice/advice';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AdviceProvider } from '../providers/advice/advice';
     MyApp,
     HomePage,
     TabsPage,
-    CookiePage
+    CookiePage,
+    HelpPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { AdviceProvider } from '../providers/advice/advice';
     MyApp,
     HomePage,
     TabsPage,
-    CookiePage
+    CookiePage,
+    HelpPage
   ],
   providers: [
     StatusBar,
