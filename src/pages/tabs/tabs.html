@@ -1,5 +1,5 @@
-<ion-tabs>
-  <ion-tab [root]="cookieTab" [tabTitle]="cookieTabTitle" tabIcon="color-wand"></ion-tab>
-  <ion-tab [root]="helpTab" [tabTitle]="helpTabTitle" tabIcon="help-circle"></ion-tab>
+<ion-tabs [color]="color">
+  <ion-tab  (ionSelect)="selectCookie()" [root]="cookieTab" [tabTitle]="cookieTabTitle" tabIcon="color-wand"></ion-tab>
+  <ion-tab  (ionSelect)="selectHelp()" [root]="helpTab" [tabTitle]="helpTabTitle" tabIcon="help-circle" ></ion-tab>
   <!-- <ion-tab [root]="testeTab" [tabTitle]="testeTabTitle" tabIcon="apps"></ion-tab> -->
 </ion-tabs>

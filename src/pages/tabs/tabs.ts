@@ -27,11 +27,21 @@ export class TabsPage {
   testeTab = TestePage;
   testeTabTitle = "Teste Cards";
 
+  color: string = "primary";
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabsPage');
+  }
+
+  selectCookie(){
+    this.color = "primary";
+  }
+
+  selectHelp(){
+    this.color = "danger";
   }
 
 }
